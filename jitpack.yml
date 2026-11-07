@@ -1,0 +1,6 @@
+jdk:
+  - openjdk21
+before_install:
+  - chmod +x gradlew
+install:
+  - bash ci/publish-jitpack.sh -Pgroup="$GROUP" -Pversion="$VERSION"
